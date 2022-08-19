@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gRAF Hookah</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header" id="top">
+    <header class="header__main" id="top">
         <div class="container">
-            <div class="header-top">
-                <div class="header-logo">
+            <div class="header__navigation">
+                <div class="header__logo">
                     <h1><span>G</span>RAF</h1>
                 </div>
-                <nav class="main-menu">
-                    <ul>
-                        <li class="main-menu-active"><a href="#">Главная</a></li>
-                        <li><a href="./shop.html">Магазин</a></li>
-                        <li><a href="#">Наша история</a></li>
-                        <li><a href="#">Блог</a></li>  
-                        <li><a href="./contac-form.html">Контакты</a></li>        
-                    </ul>
-                </nav>
+                <div class="header__mobile" id="btn__menu">
+                    <span class="header__mobile_button"></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__link  header__link_active"><a href="">Главная</a></li>
+                        <li class="header__link"><a href="./shop.html">Магазин</a></li>
+                        <li class="header__link"><a href="#">Наша история</a></li>
+                        <li class="header__link"><a href="#">Блог</a></li>  
+                        <li class="header__link"><a href="./contac-form.html">Контакты</a></li>        
+                    </ul>              
+                </nav>   
             </div>
             
             <div class="promo">
@@ -101,5 +105,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
