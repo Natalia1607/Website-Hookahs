@@ -681,3 +681,65 @@ form {
 .social__group_row .social-btn-wa {
     background-image: url("./../img/icons/social-icons-wa-bl.png");
 }
+
+/* Nav-mobile */ 
+.no-scroll {
+    overflow-y: hidden;
+}
+.header__button_mobile {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+.header__button_mobile:focus,
+.header__button_mobile:active {
+    outline: none;
+}
+.header__mobile_icon::before,
+.header__mobile_icon::after,
+.header__mobile_icon {
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+.header__mobile_icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__mobile_icon::before {
+  content: '';
+  top: -12px;
+}
+.header__mobile_icon::after {
+  content: '';
+  top: 12px;
+}
+.nav__button_close .header__mobile_icon {
+    background-color: transparent;
+}
+.nav__button_close .header__mobile_icon::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.nav__button_close .header__mobile_icon::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+.header__mobile_overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.header__mobile_active.header__mobile_overlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
