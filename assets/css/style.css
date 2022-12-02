@@ -732,7 +732,7 @@ form {
     transform: rotate(-45deg);
 }
 .header__mobile_overlay {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
